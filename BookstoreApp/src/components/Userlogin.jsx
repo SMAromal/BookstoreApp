@@ -39,7 +39,7 @@ const Userlogin = ( ) =>{
         <Box
       component="form"
       sx={{
-        '& .MuiTextField-root': { m: 1, width: '35ch' },
+        '& .MuiTextField-root': { m: 1, width: '40ch' },
         backgroundColor: 'rgba(255, 255, 255, 0.8)',
         padding: 4,
         borderRadius: 2,
@@ -57,6 +57,7 @@ const Userlogin = ( ) =>{
       <div>
         <br />
         <TextField 
+        required
         id="outlined-basic" 
         label="Name" 
         variant="outlined" 
@@ -64,6 +65,7 @@ const Userlogin = ( ) =>{
         
         <br />
         <TextField 
+        required
         id="outlined-basic" 
         label="Email-id" 
         variant="outlined" 
@@ -86,7 +88,7 @@ const Userlogin = ( ) =>{
     </div>
     <div>
         <br />
-     <Button sx={{backgroundColor: "sandybrown"}} variant='contained' onClick={valueAdd}>LogIn</Button> 
+        <Link to={'/navbar2'}><Button sx={{backgroundColor: "sandybrown"}} variant='contained' onClick={valueAdd}>LogIn</Button></Link>
     </div>
     </Box>
     </Box>

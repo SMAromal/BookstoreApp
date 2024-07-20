@@ -56,13 +56,13 @@ const Signup = () => {
     <Box
       component="form"
       sx={{
-        '& .MuiTextField-root': { m: 1, width: '40ch' },
+        '& .MuiTextField-root': { m: 1, width: '50ch' },
         backgroundColor: 'rgba(255, 255, 255, 0.8)',
         padding: 2,
         borderRadius: 2,
         backgroundSize: 'cover',
         boxShadow: 10,
-        maxWidth: '400px',  
+        maxWidth: '600px',  
         margin: 'auto',
         
       }}
@@ -82,6 +82,7 @@ const Signup = () => {
       </div>
       <div>
         <TextField
+        required
           id="outlined-required"
           label="Place"
           value={form.Place}
@@ -91,6 +92,7 @@ const Signup = () => {
       </div>
       <div>
         <TextField
+        required
           id="outlined-password-input"
           label="Age"
           value={form.Age}
@@ -100,6 +102,7 @@ const Signup = () => {
       </div>
       <div>
         <TextField
+        required
           id="outlined-required"
           label="Set up a password!"
           type="password"
@@ -111,6 +114,7 @@ const Signup = () => {
       <h4 style={{ color: 'black' ,fontFamily: 'Lobster'}}>Contact Details:</h4>
       <div>
         <TextField
+        required
           id="outlined-required"
           label="Email-id"
           type="email"
@@ -121,6 +125,7 @@ const Signup = () => {
       </div>
       <div>
         <TextField
+        required
           id="outlined-required"
           label="Phone Number"
           type="tel"

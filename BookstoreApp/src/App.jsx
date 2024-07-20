@@ -8,6 +8,9 @@ import Userlogin from './components/Userlogin'
 import Addbook from './components/Addbook'
 import { Route, Routes } from 'react-router-dom'
 import Home from './components/Home'
+import Userlist from './components/Userlist'
+import Booklist from './components/Booklist'
+import Profile from './components/Profile'
 
 
 function App() {
@@ -21,6 +24,9 @@ function App() {
     <Route path='/add' element={<Addbook/>}></Route>
     <Route path='/' element={<Signup/>}></Route>
     <Route path='/login' element={<Userlogin/>}></Route>
+    <Route path='/userlist' element={<Userlist/>}></Route>
+    <Route path='/booklist' element={<Booklist/>}></Route>
+    <Route path='/profile' element={<Profile/>}></Route>
     </Routes>
     </>
   )
